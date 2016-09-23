@@ -8,4 +8,12 @@ app.controller('EmbarquesCtrl', function($scope, $state, $http, CONFIG) {
     });
   }
 
+  $scope.loadAllEmbarques = function () {
+    $http.get(CONFIG.API + 'embarque').then(function (data) {
+      $scope.embarques = data.data;
+    }).catch(function (err) {
+      console.log('ERROR: /api/embarque/', err);
+    });
+  }
+
 });

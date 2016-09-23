@@ -6,6 +6,9 @@ app.config(function ($urlRouterProvider, $stateProvider) {
     .state('dashboard', {url: '/dashboard', templateUrl: 'templates/dashboard.html', controller: 'DashboardCtrl'})
     //Embarques
     .state('embarques-activos', {url: '/embarques/activos', templateUrl: 'templates/embarques/activos.html', controller: 'EmbarquesCtrl'})
+    .state('embarques-historial', {url: '/embarques/historial', templateUrl: 'templates/embarques/historial.html', controller: 'EmbarquesCtrl'})
+    //Clientes
+    .state('clientes-lista', {url: '/clientes/lista', templateUrl: 'templates/clientes/lista.html', controller: 'ClientesCtrl'})
 });
 
 app.constant('CONFIG', {

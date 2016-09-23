@@ -1,0 +1,15 @@
+<ion-view view-title="Lista de clientes">
+  <ion-content>
+    <div class="row center-xs middle-xs">
+      <div class="col-xs-12">
+        <h4>Listado de clientes</h4>
+      </div>
+      <ul class="list" ng-init="getAllClientes()" style="width: 100%;margin-left:1em;">
+        <li class="item" ng-repeat="cliente in clientes | orderBy:createdAt:true">
+          <h2>{{cliente.name}}</h2>
+          <p>Fecha de creación: {{cliente.createdAt | date}}</p>
+        </li>
+      </ul>
+    </div>
+  </ion-content>
+</ion-view>
