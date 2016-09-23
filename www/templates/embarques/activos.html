@@ -1,0 +1,16 @@
+<ion-view view-title="Embarques activos">
+  <ion-content>
+    <div class="row center-xs middle-xs">
+      <div class="col-xs-12">
+        <h4>Embarques activos</h4>
+      </div>
+      <ul class="list" ng-init="loadEmbarquesActivos()" style="width: 100%;margin-left:1em;">
+        <li class="item" ng-repeat="emb in embarques">
+          <h2>{{emb.nombreProducto}}</h2>
+          <p>Fecha de entrada: {{emb.createdAt | date}}</p>
+          <p>Cliente: {{emb.cliente.name}}</p>
+        </li>
+      </ul>
+    </div>
+  </ion-content>
+</ion-view>

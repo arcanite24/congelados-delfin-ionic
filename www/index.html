@@ -35,6 +35,7 @@
     <script src="js/config.js"></script>
     <script src="js/controllers/LoginCtrl.js"></script>
     <script src="js/controllers/DashboardCtrl.js"></script>
+    <script src="js/controllers/EmbarquesCtrl.js"></script>
   </head>
   <body ng-app="starter">
     <ion-side-menus enable-menu-with-back-views="true">
@@ -42,8 +43,8 @@
       <ion-side-menu side="left">
         <ul class="list">
           <li class="item"><strong>Congelados Delfín</strong></li>
-          <li class="item">Dashboard</li>
-          <li class="item">Embarques Activos</li>
+          <li class="item" ui-sref="dashboard">Dashboard</li>
+          <li class="item" ui-sref="embarques-activos">Embarques Activos</li>
           <li class="item">Historial de embarques</li>
           <li class="item">Lista de clientes</li>
           <li class="item">Cerrar sesión</li>

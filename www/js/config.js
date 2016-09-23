@@ -4,6 +4,8 @@ app.config(function ($urlRouterProvider, $stateProvider) {
   $stateProvider
     .state('login', {url: '/login', templateUrl: 'templates/login.html', controller: 'LoginCtrl'})
     .state('dashboard', {url: '/dashboard', templateUrl: 'templates/dashboard.html', controller: 'DashboardCtrl'})
+    //Embarques
+    .state('embarques-activos', {url: '/embarques/activos', templateUrl: 'templates/embarques/activos.html', controller: 'EmbarquesCtrl'})
 });
 
 app.constant('CONFIG', {
